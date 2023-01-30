@@ -17,6 +17,7 @@ module.exports = {
       colors: {
         lavander: {
           500: '#7E3AF2;',
+          600: '#6C2BD9',
           800: '#E02424;',
         },
         black: {

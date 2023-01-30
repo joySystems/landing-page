@@ -11,11 +11,11 @@
 
 <body>
     <header
-        class="header font-montserrat bg-white-500 content-center items-center flex h-16 flex-wrap border-b-2 border-gray-500  w-100  ">
+        class="header font-montserrat bg-white-500 content-center items-center flex h-16 flex-wrap border-b-2 border-gray-500  w-full  ">
 
 
 
-        <nav class="menu container relative mx-auto flex flex-row justify-between items-center px-6 ">
+        <nav class="menu container relative mx-auto flex flex-row justify-between items-center px-6 sm:px-4 w-full sm:mx-0">
 
             <a href="" class="logo">
                 <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -53,37 +53,47 @@
                 <li class=""><a href="" class="hover:text-lavander-500">About</a></li>
                 <li class=""><a href="" class="hover:text-lavander-500">Get in touch</a></li>
             </ul>
+
+
+            
+              <div class="flex lg:hidden">
+                <div class="space-y-2">
+                  <span class="block w-8 h-0.5 bg-gray-600 animate-pulse"></span>
+                  <span class="block w-8 h-0.5 bg-gray-600 animate-pulse"></span>
+                  <span class="block w-8 h-0.5 bg-gray-600 animate-pulse"></span>
+                </div>
+              </div>
         </nav>
 
     </header>
 
-    <main class="main bg-white-500 font-montserrat">
-        <section class="main" id="main">
-            <div class="flex flex-col md:flex-row  justify-between mx-auto space-y-0 md:space-y-0 relative">
-                <div id="left" class="flex flex-col px-6 ml-20 mb-32 mt-32 space-y-12 md:w-1/2 lg:w-5/12">
+    <main class="main bg-white-500 font-montserrat w-full">
+        <section class="main w-full" id="main">
+            <div class="flex flex-col md:flex-row sm:flex-col w-full sm:justify-start justify-between mx-auto space-y-0 md:space-y-0 relative">
+                <div id="left" class="flex flex-col sm:px-4 px-6 sm:ml-0 ml-20 sm:mb-0 mb-32 sm:mt-7 mt-32 sm:space-y-6 space-y-12 sm:w-full md:w-1/2 lg:w-5/12">
                     <div class="title">
-                        <h1 class="text-6xl font-bold font-montserrat mb-5 ">Hey, I’m Nick</h1>
-                        <p class="subtitle text-xl mb-24">Frontend developer</p>
+                        <h1 class="text-6xl sm:text-2xl font-bold font-montserrat sm:mb-1 mb-5 ">Hey, I’m Nick</h1>
+                        <p class="subtitle text-xl sm:text-sm sm:mb-3 mb-24">Frontend developer</p>
                     </div>
 
                     <div class="line mb-6 w-6 border-2 border-lavander-500 border-solid"></div>
-                    <div class="desc text-xl">
+                    <div class="desc text-xl sm:text-sm sm:my-6">
 
                         Help you to create high-quality digital <br>
                         products that your clients will love and let <br>
                         your business thrive
                     </div>
                     <div class="flex justify-left ">
-                        <a href="#" class=" flex flex-row bg-lavander-500 rounded-full px-6 py-3">
-                            <span class=" text-white-500">Get in touch</span>
-                            <img src="./src/img/arrow.png" alt="" class="ml-4 h-auto fill-white-500">
+                        <a href="#" class=" flex flex-row bg-lavander-500 hover:bg-lavander-600 rounded-full sm:px-3 px-6 sm:py-2 py-3">
+                            <span class=" text-white-500 font-montserrat font-semibold sm:text-sm">Get in touch</span>
+                            <img src="./src/img/arrow.png" alt="" class="ml-4 sm:ml-2 h-auto fill-white-500">
                         </a>
 
                     </div>
 
                 </div>
 
-                <div id="right" class="w-8/12 h-full absolute bottom-0 right-0">
+                <div id="right" class="w-8/12 sm:w-full h-full absolute sm:relative bottom-0 right-0 sm:-mt-20">
                     <img src="./src/img/photo3.png" alt="" class="">
 
                 </div>
@@ -109,7 +119,7 @@
                         through negotiations
                     </div>
                     <div class="flex justify-left ">
-                        <a href="#" class=" flex flex-row bg-lavander-500 rounded-full px-6 py-3">
+                        <a href="#" class=" flex flex-row bg-lavander-500 hover:bg-lavander-600 rounded-full px-6 py-3">
                             <span class=" text-white-500">Get in touch</span>
                             <img src="./src/img/arrow.png" alt="" class="ml-4 h-auto fill-white-500">
                         </a>
@@ -216,15 +226,25 @@
                                         <path d="M12.75 5C12.75 5.99456 12.3549 6.94839 11.6516 7.65165C10.9484 8.35491 9.99454 8.75 8.99998 8.75C8.00541 8.75 7.05159 8.35491 6.34833 7.65165C5.64506 6.94839 5.24998 5.99456 5.24998 5C5.24998 4.00544 5.64506 3.05161 6.34833 2.34835C7.05159 1.64509 8.00541 1.25 8.99998 1.25C9.99454 1.25 10.9484 1.64509 11.6516 2.34835C12.3549 3.05161 12.75 4.00544 12.75 5ZM1.50098 19.118C1.53311 17.1504 2.33731 15.2742 3.74015 13.894C5.14299 12.5139 7.03206 11.7405 8.99998 11.7405C10.9679 11.7405 12.857 12.5139 14.2598 13.894C15.6626 15.2742 16.4668 17.1504 16.499 19.118C14.1464 20.1968 11.5881 20.7535 8.99998 20.75C6.32398 20.75 3.78398 20.166 1.50098 19.118Z" fill="" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
                                  <!--<img src="./src/img/person.svg" alt="" class="w-6 h-6 absolute ml-5 fill-gray-800"> -->  
-                                <input class="placeholder-gray-800 rounded-2xl border-0 ring-1 ring-gray-500 focus:ring-1 focus:ring-lavander-500 px-5 py-3 w-full pl-14" type="text" name="name" id="name" placeholder="Name Surname">
+                                <input class="placeholder-gray-800 rounded-2xl border-0 ring-1 ring-gray-500 focus:ring-1 focus:ring-lavander-500 hover:ring-lavander-500 px-5 py-3 w-full pl-14" type="text" name="name" id="name" placeholder="Name Surname">
                                 
                                 </div>
                                 
                                 <div class="hidden text-lavander-800 font-semibold">Please fill this mandatory field</div>
                             </div>
-                            <div class="input flex flex-col justify-start items-start w-1/2">
+                            <div class="input flex flex-col justify-start items-start mr-5 w-1/2">
                                 <label class="mb-2 text-base font-montserrat font-semibold" for="email">Your email <span class="text-lavander-800">*</span></label>
-                                <input class="rounded-2xl border-0 ring-1 ring-gray-500 focus:ring-1 focus:ring-lavander-500 px-5 py-3 w-full" type="email" name="email" id="email" placeholder="name@example.com">
+                                <div class="relative flex items-center w-full text-black-500" >
+                                   
+                                        <svg class="w-6 h-6 absolute ml-5 fill-gray-800 stroke-gray-800 pointer-events-none" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19.2 5.2998H19.2001C19.6849 5.29972 20.1515 5.48502 20.5042 5.81777L20.8473 5.45408L20.5042 5.81777C20.7789 6.07694 20.9684 6.41027 21.052 6.77374L12 11.2992L2.94791 6.77374C3.03154 6.41027 3.22098 6.07694 3.49569 5.81777C3.8484 5.48502 4.31498 5.29972 4.79987 5.2998H4.79996H19.2Z" fill="" stroke=""/>
+                                            <path d="M21.5999 9.7417L11.9999 14.5417L2.3999 9.7417V16.8001C2.3999 17.4366 2.65276 18.0471 3.10285 18.4972C3.55293 18.9472 4.16338 19.2001 4.7999 19.2001H19.1999C19.8364 19.2001 20.4469 18.9472 20.897 18.4972C21.347 18.0471 21.5999 17.4366 21.5999 16.8001V9.7417Z" fill=""/>
+                                        </svg>
+                                 <!--<img src="./src/img/person.svg" alt="" class="w-6 h-6 absolute ml-5 fill-gray-800"> -->  
+                                        <input class="placeholder-gray-800 rounded-2xl border-0 ring-1 ring-gray-500 focus:ring-1 focus:ring-lavander-500 hover:ring-lavander-500 px-5 py-3 w-full pl-14" type="text" name="email" id="email" placeholder="name@example.com">
+                                
+                                </div>
+                                
                                 <div class="hidden text-lavander-800 font-semibold">Please fill this mandatory field</div>
                             </div>
 
@@ -233,13 +253,12 @@
                         <div class="flex flex-col justify-start items-start w-full mb-12">
                                 <label for="description" class="mb-2 text-base font-montserrat font-semibold">Tell me about your project</label>
 
-                               <textarea name="description" id="description" cols="30" rows="15" class="h-32 w-full rounded-2xl border-0 ring-1 ring-gray-500 focus:ring-1 focus:ring-lavander-500 px-5 py-3">Add here a general description of your idea and target aim
-                                </textarea>
+                               <textarea placeholder="Add here a general description of your idea and target aim" name="description" id="description" cols="30" rows="15" class="hover:ring-lavander-500 placeholder-gray-800 h-32 w-full rounded-2xl border-0 ring-1 ring-gray-500 focus:ring-1 focus:ring-lavander-500 px-5 py-3"></textarea>
                          </div>
 
                         
 <div class="flex justify-left ">
-                        <a href="#" class=" flex flex-row bg-lavander-500 rounded-full px-6 py-3">
+                        <a href="#" class=" flex flex-row bg-lavander-500 hover:bg-lavander-600 rounded-full px-6 py-3">
                             <span class=" text-white-500">Submit</span>
                             <img src="./src/img/arrow.png" alt="" class="ml-4 h-auto fill-white-500">
                         </a>
